@@ -11,7 +11,7 @@ class Triangle
   def kind
     if self.side_one + self.side_two + self.side_three != 180
       raise TriangleError
-    elsif self.side_two == self.side_three == self.side_one == 60
+    elsif self.side_two == 60 && self.side_three == 60 && self.side_one == 60
       return :equilateral
     elsif self.side_one == self.side_two || self.side_one == self.side_three || self.side_two == self.side_three
       return :isosceles
