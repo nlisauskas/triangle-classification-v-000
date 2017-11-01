@@ -12,10 +12,10 @@ class Triangle
     if self.side_one + self.side_two + self.side_three != 180 
       raise TriangleError
     elsif self.side_two == self.side_three == self.side_one == 60
-      then :equilateral
+      return :equilateral
     elsif self.side_one == self.side_two || self.side_one == self.side_three || self.side_two == self.side_three
-      then :isosceles
-    else :scalene
+      return :isosceles
+    return :scalene
     end
 
   end
