@@ -9,7 +9,7 @@ class Triangle
   end
 
   def kind
-    if self.side_one + self.side_two + self.side_three != 180 
+    if self.side_one + self.side_two + self.side_three != 180
       raise TriangleError
     elsif self.side_two == self.side_three == self.side_one == 60
       return :equilateral
@@ -21,8 +21,6 @@ class Triangle
   end
 
   end
-
-end
 
 class TriangleError < StandardError
 
